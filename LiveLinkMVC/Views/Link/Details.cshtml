@@ -1,0 +1,38 @@
+﻿@model LiveLinkMVC.Models.LiveLink
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>LiveLink</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Link)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Link)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Begin)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Begin)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.End)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.End)
+    </div>
+
+ 
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
